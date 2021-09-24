@@ -1,10 +1,11 @@
 const newPostHandler = async function(event){
     event.preventDefault();
-
-    ///await fetch('api/post, {
-        method:
-        body:{title, body}
-        headers:
+    const title = document.querySelector('');
+    const body = document.querySelectorAll('');
+    await fetch('api/post', {
+        method:'POST',
+        body:JSON.stringify({title, body}),
+        //headers:
     });
     document.location.replace('')
 };
